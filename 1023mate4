@@ -13,71 +13,78 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-- name: dongtaiwang.com_0                     
-  type: vmess
-  server: 104.19.46.233                    
-  port: 2086                                     
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e       
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip005.3196772.xyz                    
-  ws-opts:
-    path: "github.com/Alvin9999"                             
-    headers:
-      Host: ip005.3196772.xyz
-
-- name: dongtaiwang.com_1                    
-  type: vmess
-  server: 23.227.38.6           
-  port: 2086                                     
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e       
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip005.3196772.xyz                    
-  ws-opts:
-    path: "github.com/Alvin9999"                             
-    headers:
-      Host: ip005.3196772.xyz 
-
-- name: dongtaiwang.com_2
-  type: vmess
-  server: 104.19.51.232             
-  port: 2086                                     
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e       
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip005.3196772.xyz                    
-  ws-opts:
-    path: "github.com/Alvin9999"                             
-    headers:
-      Host: ip005.3196772.xyz
-
-- name: dongtaiwang.com_3           
-  type: vmess
-  server: 104.19.38.62                 
-  port: 2086                                     
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e       
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: ip005.3196772.xyz                    
-  ws-opts:
-    path: "github.com/Alvin9999"                             
-    headers:
-      Host: ip005.3196772.xyz 
-
-
+  - name: dongtaiwang.com_0                     
+    type: vmess
+    server: 104.21.238.200
+    port: 8443
+    uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: http1.9290254.xyz
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: http1.9290254.xyz
+      early-data-header-name: Sec-WebSocket-Protocol
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
+  - name: dongtaiwang.com_1                   
+    type: vmess
+    server: 104.21.238.201
+    port: 8443
+    uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: http1.9290254.xyz
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: http1.9290254.xyz
+      early-data-header-name: Sec-WebSocket-Protocol
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
+  - name: dongtaiwang.com_2                    
+    type: vmess
+    server: 104.21.238.202
+    port: 8443
+    uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: http1.9290254.xyz
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: http1.9290254.xyz
+      early-data-header-name: Sec-WebSocket-Protocol
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
+  - name: dongtaiwang.com_3                     
+    type: vmess
+    server: 104.21.238.203
+    port: 8443
+    uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: http1.9290254.xyz
+    network: ws
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: http1.9290254.xyz
+      early-data-header-name: Sec-WebSocket-Protocol
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
