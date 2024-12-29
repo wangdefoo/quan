@@ -26,7 +26,7 @@
     },
     {
       "tag": "http",
-      "port": 10809,
+      "port": 1081,
       "listen": "127.0.0.1",
       "protocol": "http",
       "sniffing": {
@@ -47,30 +47,35 @@
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.21.238.37",
-            "port": 2086,
+            "address": "36.226.244.225",
+            "port": 56870,
             "users": [
               {
-                "id": "ee420fda-efb7-48a8-9249-8987e36ebd9e",
+                "id": "7c4efc45-42f7-48d8-a741-6093cd2886a7",
                 "alterId": 0,
                 "email": "t@t.tt",
-                "security": "auto"
+                "security": "auto",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "github.com/Alvin9999",
-          "headers": {
-            "Host": "ip7.9447609.xyz"
-          }
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.yahoo.com",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA",
+          "shortId": "239c3cef",
+          "spiderX": ""
         }
       },
       "mux": {
